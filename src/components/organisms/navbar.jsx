@@ -3,14 +3,12 @@ import { NavMenu } from '../molecules/navMenu'
 import { UserProfile } from '../molecules/userProfile'
 import styles from './navbar.module.css'
 
-function Navbar({ navOpen, currentUser }) {
+function Navbar({ navOpen }) {
   return (
     <nav className={`${styles.navbar} ${navOpen ? styles.open : ''}`}>
       <Logo/>
       <NavMenu/>
-      <UserProfile
-        currentUser={currentUser}
-      />
+      <UserProfile/>
 
     </nav>
   )

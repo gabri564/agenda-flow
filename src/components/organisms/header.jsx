@@ -18,7 +18,7 @@ function Header({ setModalIsOpen, setNotifyOpen, setNavOpen }) {
         </button>
 
         <HeaderSearch />
-        
+
         <HeaderUser
           setModalIsOpen={setModalIsOpen}
           setNotifyOpen={setNotifyOpen}

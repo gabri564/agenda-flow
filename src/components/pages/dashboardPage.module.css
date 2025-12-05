@@ -1,432 +1,445 @@
 .home {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  max-height: 89vh;
-  padding: 3em;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-height: 89vh;
 }
-.containerTitles{
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+
+.home h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-left: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 3vh;
+}
+
+.home p {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-left: 5%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .cards {
-  display: flex;
-  gap: 2%;
-  width: 90%;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 2%;
+    margin-left: 5%;
+    width: 90%;
+    flex-wrap: wrap;
 }
 
 .card {
-  background: white;
-  padding: 1.5%;
-  border-radius: 12px;
-  border: 1px solid var(--line);
-  flex: 1;
-  height: 19vh;
+    background: white;
+    padding: 1.5%;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    flex: 1;
+    height: 19vh;
 }
 
 .card p {
-  margin-top: 12%;
-  font-size: 1vw;
-  color: rgb(67, 67, 70);
+    margin-top: 12%;
+    font-size: 1vw;
+    color: rgb(67, 67, 70);
 }
 
 .info_card {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .info_card aside {
-  font-size: 1vw;
-  margin-top: 1vw;
+    font-size: 1vw;
+    margin-top: 1vw;
 }
 
 .icon {
-  color: #858585;
-  width: 3vw;
-  height: auto;
-  background-color: #eeeaea;
-  border-radius: 20%;
-  padding: 0.4rem;
+    color: #858585;
+    width: 3vw;
+    height: auto;
+    background-color: #eeeaea;
+    border-radius: 20%;
+    padding: 0.4rem;
 }
 
 .tareasCard {
-  border-radius: 1rem;
-  width: 90%;
-  height: auto;
-  display: flex;
-  padding: 0;
+    border-radius: 1rem;
+    margin: 2% auto;
+    width: 90%;
+    height: auto;
+    display: flex;
+    padding: 0;
 }
 
 .container_tasks_reminders {
-  background-color: white;
-  border-radius: 1rem;
-  margin-top: 1.5vw;
-  width: 72%;
-  height: auto;
-  display: flex;
-  gap: 2rem;
-  padding: 0;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 1.5vw;
+    width: 72%;
+    height: auto;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
 }
 
 .container_tasks {
-  flex: 1;
-  width: 60%;
-  height: auto;
+    flex: 1;
+    width: 60%;
+    height: auto;
 }
 
 .tareasCard_title p {
-  font-size: 0.8vw;
-  margin: 0;
+    font-size: 0.8vw;
+    margin: 0;
 }
 
 .textCard {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 1.5rem 1rem 1.5rem;
-  align-items: center;
-  border-bottom: 2px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    align-items: center;
+    border-bottom: 2px solid #e5e5e5;
 }
 
 .textCard_options {
-  cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .listaTareas {
-  padding: 0.5rem;
-  width: 100%;
+    padding: 0.5rem;
+    width: 100%;
 }
 
 .listas {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .tarea {
-  display: flex;
-  gap: 1vw;
-  padding: 1.5rem;
-  margin: 0.3rem 0.8rem;
-  background-color: var(--gray-claro);
-  border-radius: 0.8rem;
-  align-items: flex-start;
-  justify-content: space-between;
-  height: 4vw;
+    display: flex;
+    gap: 1vw;
+    padding: 1.5rem;
+    margin: 0.3rem 0.8rem;
+    background-color: var(--gray-claro);
+    border-radius: 0.8rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 4vw;
 }
 
 .tarea:hover {
-  background-color: var(--gray);
+    background-color: var(--gray);
 }
 
 .tareas_check {
-  display: flex;
-  align-items: flex-start;
-  padding-top: 0.3rem;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 0.3rem;
 }
 
 .tareas_check input {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
 }
 
 .info {
-  flex: 1;
+    flex: 1;
 }
 
 .info h4 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2vh;
-  font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    font-weight: normal;
 }
 
 .info p {
-  margin: 0.5rem;
-  font-size: 0.8vw;
-  color: var(--text3-color);
-  line-height: 1.3;
+    margin: 0.5rem;
+    font-size: 0.8vw;
+    color: var(--text3-color);
+    line-height: 1.3;
 }
 
 .tareasHora {
-  display: flex;
-  align-items: flex-start;
-  padding-top: 0.3rem;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 0.3rem;
 }
 
 .tareasHora span {
-  font-size: clamp(0.85rem, 1.5vw, 0.95rem);
-  color: #666;
-  white-space: nowrap;
+    font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+    color: #666;
+    white-space: nowrap;
 }
 
 .container_reminders {
-  background-color: white;
-  border-radius: 1rem;
-  margin-top: 1.5vw;
-  margin-left: 2vw;
-  width: 45%;
-  height: auto;
-  display: flex;
-  gap: 2rem;
-  padding: 0;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 1.5vw;
+    margin-left: 2vw;
+    width: 45%;
+    height: auto;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
 }
 
 .tareasCard_title {
-  width: 100%;
+    width: 100%;
 }
 
 .reminders_icon {
-  cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .reminders_icon:hover {
-  background-color: var(--gray-claro);
+    background-color: var(--gray-claro);
 }
 
 .card_recordatorio {
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  width: 40%;
-  height: auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 40%;
+    height: auto;
 }
 
 .recordatorioCard {
-  display: flex;
-  gap: 1rem;
-  padding: 1rem 1.2rem;
-  margin: 0.3rem 0.8rem;
-  background-color: var(--gray-claro);
-  border-radius: 0.8rem;
-  align-items: flex-start;
-  width: 30vw;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 1.2rem;
+    margin: 0.3rem 0.8rem;
+    background-color: var(--gray-claro);
+    border-radius: 0.8rem;
+    align-items: flex-start;
+    width: 30vw;
 }
 
 .reminders_cont {
-  display: flex;
-  align-items: center;
-  padding-top: 0.2rem;
+    display: flex;
+    align-items: center;
+    padding-top: 0.2rem;
 }
 
 .recordatori_info {
-  flex: 1;
-  min-width: 0;
+    flex: 1;
+    min-width: 0;
 }
 
 .recordatori_info h4 {
-  margin: 0.5vw;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1vw;
-  font-weight: normal;
+    margin: 0.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    font-weight: normal;
 }
 
 .recordatori_info p {
-  margin-left: 0.5vw;
-  font-size: 0.8vw;
-  color: var(--text3-color);
+    margin-left: 0.5vw;
+    font-size: 0.8vw;
+    color: var(--text3-color);
 }
 
 .container_event {
-  gap: 2%;
-  background-color: white;
-  border-radius: 1rem;
-  width: 90%;
+    gap: 2%;
+    background-color: white;
+    border-radius: 1rem;
+    margin-left: 4vw;
+    width: 90%;
 }
 
 .eventsCard {
-  display: flex;
-  margin: 1em;
-  justify-content: space-between;
-  border-bottom: 2px solid #858585;
-  padding: 1em;
-  flex-wrap: wrap;
+    display: flex;
+    margin: 1em;
+    justify-content: space-between;
+    border-bottom: 2px solid #858585;
+    padding: 1em;
+    flex-wrap: wrap;
 }
 
 .eventsCard_icon {
-  margin-left: 1rem;
-  display: flex;
-  margin-top: 1.8rem;
+    margin-left: 1rem;
+    display: flex;
+    margin-top: 1.8rem;
 }
 
 .eventsCard_icon:hover {
-  background-color: var(--gray-claro);
+    background-color: var(--gray-claro);
 }
 
 .max_container {
-  width: 100%;
-  height: 15rem;
+    width: 100%;
+    height: 15rem;
 }
 
 .upcoming_events {
-  display: flex;
-  justify-content: space-between;
-  margin: 3%;
-  flex-wrap: wrap;
-  gap: 2%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+    flex-wrap: wrap;
+    gap: 2%;
 }
 
 .eventtCard {
-  background-color: var(--gray-claro);
-  border-radius: 1rem;
-  padding: 1rem;
-  min-height: 13.5rem;
-  width: 100%;
-  flex: 1 1 calc(33.333% - 2%);
-  min-width: min(250px, 100%);
-  border-left: 4px solid var(--gray);
+    background-color: var(--gray-claro);
+    border-radius: 1rem;
+    padding: 1rem;
+    min-height: 13.5rem;
+    width: 100%;
+    flex: 1 1 calc(33.333% - 2%);
+    min-width: min(250px, 100%);
+    border-left: 4px solid var(--gray);
 }
 
 .eventIcon {
-  display: flex;
-  gap: 1rem;
-  font-size: 1vw;
-  margin-left: 1rem;
-  color: var(--text3-color);
+    display: flex;
+    gap: 1rem;
+    font-size: 1vw;
+    margin-left: 1rem;
+    color: var(--text3-color);
 }
 
 .eventInfo {
-  margin-top: 1rem;
-  margin-left: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 
 .eventInfo small {
-  font-size: clamp(0.8rem, 1.5vw, 1rem);
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
 .eventInfo p {
-  font-size: clamp(0.75rem, 1.5vw, 1rem);
-  margin-left: 0%;
-  color: var(--text3-color);
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    margin-left: 0%;
+    color: var(--text3-color);
 }
 
 .textCard_options:hover {
-  background-color: var(--gray-claro);
+    background-color: var(--gray-claro);
 }
 
 .reminders_cont span {
-  display: flex;
-  align-items: center;
-  font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
 }
 
+
+
 .eventInfo h4 {
-  font-size: clamp(1.2rem, 2.5vw, 1.5em);
-  font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1.2rem, 2.5vw, 1.5em);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .scrollContent {
-  overflow-y: auto;
-  flex: 1;
-  padding-right: 10px;
-  padding-bottom: 2rem;
-  height: 0;
-  width: 100%;
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 10px;
+    padding-bottom: 2rem;
+    height: 0;
+    width: 100%;
 }
 
 /* Media queries para diferentes tamaños de pantalla */
 @media (max-width: 1200px) {
-  .tareasCard {
-    width: 95%;
-  }
-
-  .container_event {
-    width: 95%;
-  }
-
-  .eventtCard {
-    flex: 1 1 calc(50% - 2%);
-  }
+    .tareasCard {
+        width: 95%;
+    }
+    
+    .container_event {
+        width: 95%;
+    }
+    
+    .eventtCard {
+        flex: 1 1 calc(50% - 2%);
+    }
 }
 
 @media (max-width: 768px) {
-  .home h2 {
-    margin-left: 3%;
-  }
-
-  .home p {
-    margin-left: 3%;
-  }
-
-  .cards {
-    flex-direction: column;
-    margin-left: 3%;
-    width: 94%;
-  }
-
-  .card {
-    width: 100%;
-    min-width: unset;
-    height: auto;
-    min-height: 14vh;
-  }
-
-  .tareasCard {
-    flex-direction: column;
-    width: 94%;
-    gap: 0;
-  }
-
-  .container_tasks {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  .container_reminders {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  .upcoming_events {
-    flex-direction: column;
-  }
-
-  .eventtCard {
-    max-width: 100%;
-    flex: 1 1 100%;
-  }
-
-  .container_event {
-    margin-left: 3%;
-    width: 94%;
-  }
-
-  .info p {
-    width: 100%;
-  }
+    .home h2 {
+        margin-left: 3%;
+    }
+    
+    .home p {
+        margin-left: 3%;
+    }
+    
+    .cards {
+        flex-direction: column;
+        margin-left: 3%;
+        width: 94%;
+    }
+    
+    .card {
+        width: 100%;
+        min-width: unset;
+        height: auto;
+        min-height: 14vh;
+    }
+    
+    .tareasCard {
+        flex-direction: column;
+        width: 94%;
+        gap: 0;
+    }
+    
+    .container_tasks {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    
+    .container_reminders {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    
+    .upcoming_events {
+        flex-direction: column;
+    }
+    
+    .eventtCard {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    
+    .container_event {
+        margin-left: 3%;
+        width: 94%;
+    }
+    
+    .info p {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
-  .home h2 {
-    font-size: 2rem;
-    margin-left: 2%;
-  }
-
-  .cards {
-    margin-left: 2%;
-    width: 96%;
-  }
-
-  .tarea {
-    gap: 1em;
-    padding: 2%;
-  }
-
-  .recordatorioCard {
-    gap: 1em;
-    padding: 2%;
-  }
+    .home h2 {
+        font-size: 2rem;
+        margin-left: 2%;
+    }
+    
+    .cards {
+        margin-left: 2%;
+        width: 96%;
+    }
+    
+    .tarea {
+        gap: 1em;
+        padding: 2%;
+    }
+    
+    .recordatorioCard {
+        gap: 1em;
+        padding: 2%;
+    }
 }
