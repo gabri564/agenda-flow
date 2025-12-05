@@ -11,8 +11,7 @@ import { NewEventModal } from '../organisms/modalNewEvent'
 
 function CalendarPage() {
   const [formEventOpen, setFormEventOpen] = useState(false)
-  // Usar la fecha actual en lugar de una fecha hardcodeada
-  const [fechaActual, setFechaActual] = useState(new Date())
+  const [fechaActual, setFechaActual] = useState(new Date(2025, 10, 25))
   const hoy = new Date().toISOString().split("T")[0]
   const [diaSeleccionado, setDiaSeleccionado] = useState(hoy)
   

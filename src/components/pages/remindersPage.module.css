@@ -1,5 +1,6 @@
 .home {
   gap: 2vw;
+  background-color: var(--gray-claro);
 }
 
 .header {
@@ -18,7 +19,7 @@
 }
 
 .minTarget {
-  border: 1px solid var(--line);
+  border: 1px solid var(--gray);
   background-color: var(--white);
   border-radius: 1rem;
   padding: 3rem;
@@ -53,7 +54,7 @@
   background-color: var(--white);
   border-radius: 1rem;
   margin-left: 3.5vw;
-  border: 1px solid var(--line);
+  border: 1px solid var(--gray);
 }
 
 .allReminders_header {
@@ -67,7 +68,7 @@
 
 .reminderCard {
   display: flex;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--gray);
   padding: 2vh;
   width: 100%;
   height: 18vh;
@@ -155,7 +156,7 @@
   background-color: var(--white);
   border-radius: 1rem;
   margin-left: 3.5vw;
-  border: 1px solid var(--line);
+  border: 1px solid var(--gray);
 }
 
 .recordatorioCategoria_header {

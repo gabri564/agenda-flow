@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router';
 import styles from './navLink.module.css';
 import PropTypes from 'prop-types';
 
