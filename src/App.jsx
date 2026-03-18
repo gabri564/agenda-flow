@@ -32,7 +32,7 @@ function App() {
   useEffect(() => {
     const user = AuthService.getCurrentUser()
     if (user) {
-      setCurrentUser(user)
+      (user)
     }
   }, [])
 

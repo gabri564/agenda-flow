@@ -1,0 +1,519 @@
+/* ====== CONTENEDOR GENERAL ====== */
+.home {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto 1.5rem auto;
+    padding: 0 1rem;
+}
+
+.container h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.container p {
+    color: #6b7280;
+}
+
+/* ====== BUSCADOR ====== */
+.containerMax {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.containerGlass {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 900px;
+    padding: 1rem 1.3rem;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+}
+
+.containerGlass svg {
+    color: #9ca3af;
+}
+
+.containerGlass p {
+    color: #9ca3af;
+}
+
+/* ====== TARJETAS DE AYUDA ====== */
+.helpCardsContainer {
+    max-width: 1000px;
+    margin: 0 auto 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.helpCard {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+    transition: 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.helpCard:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+    transform: translateY(-2px);
+}
+
+.helpCard svg {
+    background: #f3f4f6;
+    padding: 0.6rem;
+    border-radius: 10px;
+    width: 38px;
+    height: 38px;
+}
+
+.helpCard aside:first-of-type {
+    font-weight: 600;
+    color: #111827;
+}
+
+.helpCard aside:last-of-type {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+/* ====== FAQ SECTION ====== */
+.faqSection {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.faqHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.faqHeader svg {
+    width: 24px;
+    height: 24px;
+    color: #4b5563;
+}
+
+.faqList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faqItem {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 1rem 1.2rem;
+}
+
+.faqButton {
+    width: 100%;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    cursor: pointer;
+}
+
+.faqButton  {
+    font-weight: 50px;
+    color: #1f2937;
+}
+
+.chevronOpen {
+    transform: rotate(180deg);
+    transition: 0.25s ease;
+}
+
+.chevronClosed {
+    transition: 0.25s ease;
+}
+
+.faqAnswer {
+    margin-top: 0.7rem;
+    padding-left: 0.5rem;
+    color: #6b7280;
+    border-left: 3px solid #d1d5db;
+}
+
+/* ====== SECCIÓN DE SOPORTE ====== */
+.supportSection {
+    margin-top: 40px;
+}
+
+.supportHeader {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.supportList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.supportCard {
+    background: #f9fafb;
+    border-radius: 16px;
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
+    transition: 0.2s ease;
+}
+
+.supportCard:hover {
+    transform: translateY(-2px);
+}
+
+.supportIconBox {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #0f172a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.supportIconBox svg {
+    color: #fff;
+    width: 28px;
+    height: 28px;
+}
+
+.supportTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+.supportPara {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.supportActions {
+    width: 100%;
+}
+
+.supportBtn,
+.supportBtnPrimary {
+    width: 100%;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.supportBtn {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.supportBtn:hover {
+    background: #d1d5db;
+}
+
+.supportBtnPrimary {
+    background: #0f172a;
+    color: #fff;
+}
+
+.supportBtnPrimary:hover {
+    background: #1e293b;
+}
+
+/* ===== DOCUMENTACIÓN ====== */
+.documentationList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.documentationItem {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid #e6e9ee;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.documentationItem:hover {
+    background: #f8fafc;
+    border-color: #d5d9e0;
+}
+
+.docIconBox {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #eef1f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.docIconBox svg {
+    width: 22px;
+    height: 22px;
+    color: #475569;
+}
+
+.docContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.docTitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 3px;
+}
+
+.docPara {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.documentationItem>svg {
+    width: 20px;
+    height: 20px;
+    color: #9ca3af;
+
+}
+
+/* ====== ESTADO DEL SISTEMA ====== */
+.systemStatusWrapper {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.systemStatusBox {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.systemStatusTitle {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.systemStatusCard {
+    width: 100%;
+    background: #f9fafb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1px solid #eef0f3;
+}
+
+.systemStatusLeft {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.systemStatusIcon {
+    width: 10px;
+    height: 10px;
+    background: #22c55e;
+    border-radius: 50%;
+}
+
+.systemStatusText {
+    font-size: 14px;
+    color: #374151;
+}
+
+.systemStatusUpdate {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .helpCardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .supportList {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .documentationList {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablets pequeñas (600px - 768px) */
+@media (max-width: 768px) {
+    .container h3 {
+        font-size: 1.5rem;
+    }
+
+    .helpCardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .supportList {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .documentationList {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
+
+/* Móviles (hasta 600px) */
+@media (max-width: 600px) {
+    .home {
+        padding: 1rem 0;
+    }
+
+    .container {
+        padding: 0 0.8rem;
+    }
+
+    .container h3 {
+        font-size: 1.3rem;
+    }
+
+    .containerMax {
+        padding: 0 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .containerGlass {
+        padding: 0.8rem 1rem;
+        gap: 0.8rem;
+        border-radius: 12px;
+    }
+
+    .helpCardsContainer {
+        grid-template-columns: 1fr;
+        padding: 0 0.8rem;
+        gap: 1rem;
+    }
+
+    .helpCard {
+        padding: 1.2rem;
+    }
+
+    .faqSection {
+        padding: 0 0.8rem;
+        margin: 1.5rem auto;
+    }
+
+    .faqItem {
+        padding: 0.8rem 1rem;
+    }
+
+    .faqButton p {
+        font-size: 0.9rem;
+    }
+
+    .faqAnswer {
+        font-size: 0.85rem;
+    }
+
+    .supportSection {
+        margin-top: 30px;
+        padding: 0 0.8rem;
+    }
+
+    .supportList {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .supportCard {
+        padding: 24px 16px;
+    }
+
+    .documentationList {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .documentationItem {
+        padding: 14px 16px;
+    }
+
+    .systemStatusWrapper {
+        padding: 0 0.8rem;
+    }
+
+    .systemStatusBox {
+        padding: 10px;
+    }
+}
+
+/* Móviles pequeños (hasta 400px) */
+@media (max-width: 400px) {
+    .container h3 {
+        font-size: 1.2rem;
+    }
+
+    .helpCard {
+        padding: 1rem;
+    }
+
+    .supportCard {
+        padding: 20px 14px;
+    }
+    
+}
+/* ====== FIN helpPage.module.css ====== */
