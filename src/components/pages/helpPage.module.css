@@ -1,519 +1,391 @@
-/* ====== CONTENEDOR GENERAL ====== */
+/* === Layout Principal === */
 .home {
-    width: 100%;
-    padding: 2rem 0;
     display: flex;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8fafc;
 }
 
+.mainWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* === Encabezado === */
 .container {
-    max-width: 1000px;
-    margin: 0 auto 1.5rem auto;
-    padding: 0 1rem;
-}
-
-.container h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #1f2937;
-}
-
-.container p {
-    color: #6b7280;
-}
-
-/* ====== BUSCADOR ====== */
-.containerMax {
+    text-align: center;
     display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-    padding: 0 1rem;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* === Barra de Búsqueda === */
+.containerMax {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .containerGlass {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    width: 100%;
-    max-width: 900px;
-    padding: 1rem 1.3rem;
-    background: #f9fafb;
-    border: 1px solid #e5e7eb;
-    border-radius: 14px;
+    gap: 12px;
+    padding: 14px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
-.containerGlass svg {
-    color: #9ca3af;
+.searchIcon {
+    color: #94a3b8;
+    width: 20px;
+    height: 20px;
 }
 
-.containerGlass p {
-    color: #9ca3af;
-}
-
-/* ====== TARJETAS DE AYUDA ====== */
+/* === Tarjetas de Categorías de Ayuda === */
 .helpCardsContainer {
-    max-width: 1000px;
-    margin: 0 auto 2rem auto;
-    padding: 0 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
 .helpCard {
-    background: white;
-    border-radius: 16px;
-    padding: 1.5rem;
-    border: 1px solid #e5e7eb;
-    transition: 0.2s ease;
-    cursor: pointer;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .helpCard:hover {
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 }
 
 .helpCard svg {
-    background: #f3f4f6;
-    padding: 0.6rem;
-    border-radius: 10px;
-    width: 38px;
-    height: 38px;
+    color: #3b82f6;
+    width: 32px;
+    height: 32px;
 }
 
-.helpCard aside:first-of-type {
-    font-weight: 600;
-    color: #111827;
-}
-
-.helpCard aside:last-of-type {
-    color: #6b7280;
-    font-size: 0.95rem;
-}
-
-/* ====== FAQ SECTION ====== */
+/* === Sección General de FAQ y Soporte === */
 .faqSection {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .faqHeader {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    margin-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 12px;
 }
 
-.faqHeader svg {
-    width: 24px;
-    height: 24px;
-    color: #4b5563;
-}
-
+/* === Acordeón de FAQs === */
 .faqList {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 12px;
 }
 
 .faqItem {
     background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 14px;
-    padding: 1rem 1.2rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+}
+
+.faqItemOpen {
+    border-color: #3b82f6;
 }
 
 .faqButton {
     width: 100%;
-    background: none;
-    border: none;
     display: flex;
     justify-content: space-between;
-    padding: 0;
+    align-items: center;
+    padding: 18px 24px;
+    background: none;
+    border: none;
     cursor: pointer;
-}
-
-.faqButton  {
-    font-weight: 50px;
-    color: #1f2937;
-}
-
-.chevronOpen {
-    transform: rotate(180deg);
-    transition: 0.25s ease;
-}
-
-.chevronClosed {
-    transition: 0.25s ease;
+    text-align: left;
+    gap: 16px;
 }
 
 .faqAnswer {
-    margin-top: 0.7rem;
-    padding-left: 0.5rem;
-    color: #6b7280;
-    border-left: 3px solid #d1d5db;
+    padding: 0 24px 18px 24px;
+    animation: fadeIn 0.25s ease-out;
 }
 
-/* ====== SECCIÓN DE SOPORTE ====== */
+/* === Soporte y Contacto === */
 .supportSection {
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .supportHeader {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.supportHeader svg {
+    color: #3b82f6;
 }
 
 .supportList {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .supportCard {
-    background: #f9fafb;
-    border-radius: 16px;
-    padding: 32px 20px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-    border: 1px solid #e5e7eb;
-    transition: 0.2s ease;
-}
-
-.supportCard:hover {
-    transform: translateY(-2px);
+    gap: 16px;
 }
 
 .supportIconBox {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: #0f172a;
+    background: #eff6ff;
+    padding: 10px;
+    border-radius: 8px;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 14px;
 }
 
 .supportIconBox svg {
-    color: #fff;
-    width: 28px;
-    height: 28px;
+    color: #3b82f6;
+    width: 24px;
+    height: 24px;
+}
+
+.supportContent {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
 }
 
 .supportTitle {
-    font-size: 16px;
     font-weight: 600;
-    color: #111827;
-    margin-bottom: 6px;
+    color: #1e293b;
 }
 
 .supportPara {
     font-size: 14px;
-    color: #6b7280;
-    margin-bottom: 20px;
+    color: #64748b;
 }
 
 .supportActions {
-    width: 100%;
+    margin-top: 12px;
 }
 
 .supportBtn,
 .supportBtnPrimary {
-    width: 100%;
-    padding: 10px 18px;
-    border-radius: 10px;
+    padding: 8px 16px;
+    border-radius: 6px;
     font-size: 14px;
-    border: none;
+    font-weight: 500;
     cursor: pointer;
-    transition: 0.2s;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    width: 100%;
 }
 
 .supportBtn {
-    background: #e5e7eb;
-    color: #374151;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #334155;
 }
 
 .supportBtn:hover {
-    background: #d1d5db;
+    background: #f8fafc;
+    border-color: #94a3b8;
 }
 
 .supportBtnPrimary {
-    background: #0f172a;
-    color: #fff;
+    background: #3b82f6;
+    border: 1px solid #3b82f6;
+    color: #ffffff;
 }
 
 .supportBtnPrimary:hover {
-    background: #1e293b;
+    background: #2563eb;
 }
 
-/* ===== DOCUMENTACIÓN ====== */
+/* === Acordeón de Documentación === */
 .documentationList {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.documentationWrapper {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.docItemOpen {
+    border-color: #3b82f6;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.05);
 }
 
 .documentationItem {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 18px 20px;
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 16px;
-    border: 1px solid #e6e9ee;
+    padding: 16px;
+    background: none;
+    border: none;
     cursor: pointer;
-    transition: 0.2s ease;
-}
-
-.documentationItem:hover {
-    background: #f8fafc;
-    border-color: #d5d9e0;
+    text-align: left;
 }
 
 .docIconBox {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    background: #eef1f4;
+    color: #64748b;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.docIconBox svg {
-    width: 22px;
-    height: 22px;
-    color: #475569;
 }
 
 .docContent {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    flex-grow: 1;
 }
 
 .docTitle {
-    font-size: 15px;
-    font-weight: 600;
-    color: #111827;
-    margin-bottom: 3px;
+    font-weight: 500;
+    color: #334155;
 }
 
-.docPara {
-    font-size: 14px;
-    color: #6b7280;
+.docAnswer {
+    padding: 0 16px 16px 52px;
+    /* Alineación perfecta con el título omitiendo el espacio del icono */
+    animation: fadeIn 0.2s ease-out;
 }
 
-.documentationItem>svg {
-    width: 20px;
-    height: 20px;
-    color: #9ca3af;
-
-}
-
-/* ====== ESTADO DEL SISTEMA ====== */
-.systemStatusWrapper {
-    margin-top: 10px;
-    width: 100%;
-}
-
+/* === Estado del Sistema === */
 .systemStatusBox {
-    width: 100%;
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 12px;
-    border: 1px solid #e5e7eb;
+    margin-top: 24px;
 }
 
 .systemStatusTitle {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 10px;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
 }
 
 .systemStatusCard {
-    width: 100%;
-    background: #f9fafb;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 16px;
-    border-radius: 10px;
-    border: 1px solid #eef0f3;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .systemStatusLeft {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 .systemStatusIcon {
     width: 10px;
     height: 10px;
-    background: #22c55e;
+    background-color: #22c55e;
     border-radius: 50%;
+    position: relative;
+}
+
+.systemStatusIcon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #22c55e;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
 }
 
 .systemStatusText {
     font-size: 14px;
-    color: #374151;
+    font-weight: 500;
+    color: #166534;
 }
 
 .systemStatusUpdate {
-    font-size: 13px;
-    color: #6b7280;
+    font-size: 12px;
+    color: #15803d;
 }
 
-/* ====== RESPONSIVE DESIGN ====== */
-
-/* Tablets (768px - 1024px) */
-@media (max-width: 1024px) {
-    .helpCardsContainer {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .supportList {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .documentationList {
-        grid-template-columns: 1fr;
-    }
+/* === Animaciones e Iconos Dinámicos === */
+.chevronClosed {
+    transform: rotate(0deg);
+    transition: transform 0.2s ease;
+    color: #94a3b8;
 }
 
-/* Tablets pequeñas (600px - 768px) */
-@media (max-width: 768px) {
-    .container h3 {
-        font-size: 1.5rem;
+.chevronOpen {
+    transform: rotate(90deg);
+    transition: transform 0.2s ease;
+    color: #3b82f6;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
     }
 
-    .helpCardsContainer {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-    }
-
-    .supportList {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .documentationList {
-        grid-template-columns: 1fr;
-        gap: 14px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-/* Móviles (hasta 600px) */
-@media (max-width: 600px) {
-    .home {
-        padding: 1rem 0;
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
     }
 
-    .container {
-        padding: 0 0.8rem;
-    }
-
-    .container h3 {
-        font-size: 1.3rem;
-    }
-
-    .containerMax {
-        padding: 0 0.8rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .containerGlass {
-        padding: 0.8rem 1rem;
-        gap: 0.8rem;
-        border-radius: 12px;
-    }
-
-    .helpCardsContainer {
-        grid-template-columns: 1fr;
-        padding: 0 0.8rem;
-        gap: 1rem;
-    }
-
-    .helpCard {
-        padding: 1.2rem;
-    }
-
-    .faqSection {
-        padding: 0 0.8rem;
-        margin: 1.5rem auto;
-    }
-
-    .faqItem {
-        padding: 0.8rem 1rem;
-    }
-
-    .faqButton p {
-        font-size: 0.9rem;
-    }
-
-    .faqAnswer {
-        font-size: 0.85rem;
-    }
-
-    .supportSection {
-        margin-top: 30px;
-        padding: 0 0.8rem;
-    }
-
-    .supportList {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-
-    .supportCard {
-        padding: 24px 16px;
-    }
-
-    .documentationList {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-
-    .documentationItem {
-        padding: 14px 16px;
-    }
-
-    .systemStatusWrapper {
-        padding: 0 0.8rem;
-    }
-
-    .systemStatusBox {
-        padding: 10px;
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
     }
 }
 
-/* Móviles pequeños (hasta 400px) */
-@media (max-width: 400px) {
-    .container h3 {
-        font-size: 1.2rem;
+/* === Adaptabilidad === */
+@media (max-width: 640px) {
+    .systemStatusCard {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .helpCard {
-        padding: 1rem;
+    .systemStatusUpdate {
+        margin-left: 20px;
     }
-
-    .supportCard {
-        padding: 20px 14px;
-    }
-    
 }
-/* ====== FIN helpPage.module.css ====== */
