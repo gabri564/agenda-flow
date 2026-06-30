@@ -1,0 +1,66 @@
+.helpFaqSection {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.helpFaqHeader {
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 12px;
+}
+
+.helpFaqList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.helpFaqItem {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+}
+
+.helpFaqItemOpen {
+    border-color: #3b82f6;
+}
+
+.helpFaqButton {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    gap: 16px;
+}
+
+.helpFaqAnswer {
+    padding: 0 24px 18px 24px;
+    animation: fadeIn 0.25s ease-out;
+}
+
+.helpChevronOpen {
+    transform: rotate(90deg);
+    transition: transform 0.2s ease;
+}
+
+.helpChevronClosed {
+    transition: transform 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

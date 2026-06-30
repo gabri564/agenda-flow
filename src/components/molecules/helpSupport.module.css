@@ -1,0 +1,99 @@
+.supportSection {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.supportHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.supportHeader svg {
+    color: #3b82f6;
+}
+
+.supportList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.supportCard {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    gap: 16px;
+}
+
+.supportIconBox {
+    background: #eff6ff;
+    padding: 10px;
+    border-radius: 8px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.supportIconBox svg {
+    color: #3b82f6;
+    width: 24px;
+    height: 24px;
+}
+
+.supportContent {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.supportTitle {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.supportPara {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.supportActions {
+    margin-top: 12px;
+}
+
+.supportBtn,
+.supportBtnPrimary {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    width: 100%;
+}
+
+.supportBtn {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+}
+
+.supportBtn:hover {
+    background: #f8fafc;
+    border-color: #94a3b8;
+}
+
+.supportBtnPrimary {
+    background: #3b82f6;
+    border: 1px solid #3b82f6;
+    color: #ffffff;
+}
+
+.supportBtnPrimary:hover {
+    background: #2563eb;
+}

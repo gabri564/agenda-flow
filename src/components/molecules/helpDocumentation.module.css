@@ -1,0 +1,114 @@
+.documentationList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.documentationWrapper {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.docItemOpen {
+    border-color: #3b82f6;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.05);
+}
+
+.documentationItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.docIconBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: #eff6ff;
+    border-radius: 10px;
+}
+
+.docTitle {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.docAnswer {
+    padding: 0 16px 18px 16px;
+    animation: fadeIn 0.25s ease-out;
+}
+
+.systemStatusBox {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.systemStatusTitle {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.systemStatusCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+.systemStatusLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.systemStatusIcon {
+    width: 14px;
+    height: 14px;
+    border-radius: 9999px;
+    background: #22c55e;
+}
+
+.systemStatusText {
+    color: #334155;
+}
+
+.systemStatusUpdate {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.chevronOpen {
+    transform: rotate(90deg);
+    transition: transform 0.2s ease;
+}
+
+.chevronClosed {
+    transition: transform 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
